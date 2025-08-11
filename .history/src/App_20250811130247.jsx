@@ -366,8 +366,8 @@ const getImageUrl = (imagePath) => {
   if (!imagePath) return null;
   if (imagePath.startsWith('http')) return imagePath;
   
-  // Use Cloudinary for image serving (using backend cloud name)
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'dd643wsb0';
+  // Use Cloudinary for image serving
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'caligolddrive';
   return `https://res.cloudinary.com/${cloudName}/image/upload/${imagePath}`;
 };
 

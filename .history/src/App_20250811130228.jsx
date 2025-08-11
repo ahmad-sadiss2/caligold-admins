@@ -366,8 +366,8 @@ const getImageUrl = (imagePath) => {
   if (!imagePath) return null;
   if (imagePath.startsWith('http')) return imagePath;
   
-  // Use Cloudinary for image serving (using backend cloud name)
-  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'dd643wsb0';
+  // Use Cloudinary for image serving
+  const cloudName = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || 'caligolddrive';
   return `https://res.cloudinary.com/${cloudName}/image/upload/${imagePath}`;
 };
 
@@ -1216,7 +1216,7 @@ const VehicleManagement = () => {
           <div key={vehicle.id} className="bg-white rounded-lg shadow overflow-hidden">
             <div className="aspect-w-16 aspect-h-9">
               <img
-                                    src={getImageUrl(vehicle.imageUrl) || getImageUrl('vehicles/vehicle-fallback.jpg')}
+                                    src={getImageUrl(vehicle.imageUrl) || '/assets/vehicles/vehicle-fallback.jpg'}
                 alt={vehicle.name}
                 className="w-full h-48 object-cover"
               />
