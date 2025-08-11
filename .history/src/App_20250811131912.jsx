@@ -3830,7 +3830,20 @@ const App = () => {
             Logout
           </button>
           
-
+          {/* Developer Credit */}
+          <div className="px-4 py-2 text-center border-t border-gray-100">
+                                      <div className="text-center">
+               <span className="text-gray-500 text-xs">Created with precision and purpose by</span>
+               <a 
+                 href="https://wa.me/972594262092" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-yellow-600 hover:text-yellow-700 transition-colors text-xs font-medium hover:underline ml-1"
+               >
+                 A. Alarjah
+               </a>
+             </div>
+          </div>
         </div>
       </div>
 
