@@ -9,7 +9,7 @@ import {
 import ImageCropper from './ImageCropper';
 
 // API Configuration
-const API_BASE_URL = 'https://api.caligolddrive.com/api/';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://api.caligolddrive.com/api';
 
 // Auth Context
 const AuthContext = createContext();
@@ -365,7 +365,7 @@ const api = {
 const getImageUrl = (imagePath) => {
   if (!imagePath) return null;
   if (imagePath.startsWith('http')) return imagePath;
-  return `https://api.caligolddrive.com/api/${imagePath}`;
+  return `${API_BASE_URL}${imagePath}`;
 };
 
 // Reusable Pagination Controls Component

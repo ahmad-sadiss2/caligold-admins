@@ -365,7 +365,7 @@ const api = {
 const getImageUrl = (imagePath) => {
   if (!imagePath) return null;
   if (imagePath.startsWith('http')) return imagePath;
-  return `https://api.caligolddrive.com/api/${imagePath}`;
+  return `http://45.32.74.216/api${imagePath}`;
 };
 
 // Reusable Pagination Controls Component

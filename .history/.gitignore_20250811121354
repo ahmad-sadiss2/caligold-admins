@@ -26,6 +26,4 @@ dist-ssr
 
 history/*
 history/
-../history/
-../history/*
-history
+../history

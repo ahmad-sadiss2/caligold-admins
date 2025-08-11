@@ -1,0 +1,81 @@
+# Cali Gold Admin
+
+A modern React-based admin dashboard built with Vite, Tailwind CSS, and Lucide React icons.
+
+## Features
+
+- 🚀 Fast development with Vite
+- 🎨 Beautiful UI with Tailwind CSS
+- 📱 Responsive design
+- 🖼️ Image cropping functionality with react-image-crop
+- ⚡ Hot Module Replacement (HMR)
+- 🔧 ESLint configuration for code quality
+
+## Tech Stack
+
+- **React 19** - Latest React with modern features
+- **Vite** - Fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Beautiful icons
+- **react-image-crop** - Image cropping component
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ahmad-sadiss2/caligold-admins.git
+cd caligold-admins
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+cali-gold-admin/
+├── src/
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # Application styles
+│   ├── ImageCropper.jsx # Image cropping component
+│   ├── main.jsx         # Application entry point
+│   └── assets/          # Static assets
+├── public/              # Public assets
+├── index.html           # HTML template
+└── package.json         # Dependencies and scripts
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the ISC License.
