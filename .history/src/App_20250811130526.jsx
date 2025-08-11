@@ -9,7 +9,7 @@ import {
 import ImageCropper from './ImageCropper';
 
 // API Configuration
-const API_BASE_URL = 'https://api.caligolddrive.com/api';
+const API_BASE_URL = 'https://api.caligolddrive.com/api/';
 
 // Auth Context
 const AuthContext = createContext();
